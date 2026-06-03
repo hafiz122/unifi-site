@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Plans &mdash; PlanPilih</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .plan-check-card {
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .plan-check-card.selected {
+      border-color: var(--brand-red) !important;
+      background: #fff5f5;
+    }
+    .plan-check-card .check-indicator {
+      width: 22px; height: 22px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px;
+      color: transparent;
+    }
+    .plan-check-card.selected .check-indicator {
+      background: var(--brand-red);
+      border-color: var(--brand-red);
+      color: #fff;
+    }
+    #compare-btn:disabled {
+      opacity: 0.4;
+    }
+    .comparison-table th {
+      background: var(--brand-blue);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .comparison-table td {
+      font-size: 0.9rem;
+    }
+    .best-value td {
+      background: #d4edda;
+      font-weight: 600;
+    }
+    .cheapest-col th, .cheapest-col td {
+      border-left: 2px solid #28a745 !important;
+      border-right: 2px solid #28a745 !important;
+    }
+    .fastest-col th, .fastest-col td {
+      border-left: 2px solid var(--brand-blue) !important;
+      border-right: 2px solid var(--brand-blue) !important;
+    }
+    @media (max-width: 768px) {
+      .comparison-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .comparison-table th:first-child,
+      .comparison-table td:first-child {
+        position: sticky;
+        left: 0;
+        background: #fff;
+        z-index: 2;
+        box-shadow: 2px 0 4px rgba(0,0,0,0.05);
+      }
+      .comparison-table th:first-child {
+        background: var(--brand-blue);
+        z-index: 3;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PlanPilih</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Broadband</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Mobile</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html" style="font-weight:700;">Compare Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Support</a></li>
+        </ul>
+        <div class="ms-3">
+          <a href="#" class="btn btn-outline-light btn-sm rounded-pill px-3">myPlanPilih</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Select Plans -->
+  <section>
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Compare Fibre Plans</h2>
+        <p class="text-muted">Select 2 to 4 plans to compare side by side. Click a card to select.</p>
+      </div>
+      <div class="row g-3 mb-4" id="plan-selector">
+        <!-- rendered by js/compare.js -->
+      </div>
+      <div class="text-center mb-5">
+        <button id="compare-btn" class="btn rounded-pill px-5 py-2" style="background:var(--brand-red); color:#fff; font-weight:600;" disabled>
+          Compare Selected Plans
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="bg-light" id="comparison-section" style="display:none;">
+    <div class="container">
+      <h3 class="fw-bold mb-4 text-center">Comparison</h3>
+      <div class="comparison-wrapper">
+        <table class="table table-bordered comparison-table" id="comparison-table">
+          <thead id="comparison-head"></thead>
+          <tbody id="comparison-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white">
+    <div class="container">
+      <div class="row mb-4 pt-5">
+        <div class="col-md-7 mb-4">
+          <h5 class="fw-bold mb-1">PlanPilih</h5>
+          <p class="text-white-50 small">Made for demo purposes.</p>
+        </div>
+        <div class="col-md-5 text-md-end mb-4">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a href="#" class="text-white-50 small text-decoration-none">FB</a>
+            <a href="#" class="text-white-50 small text-decoration-none">IG</a>
+            <a href="#" class="text-white-50 small text-decoration-none">YT</a>
+            <a href="#" class="text-white-50 small text-decoration-none">X</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled small">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Terms</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-white-50 pb-4">
+        &copy; 2026 PlanPilih. Demo project.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/compare.js"></script>
+</body>
+</html>

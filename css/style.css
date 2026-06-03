@@ -1,8 +1,8 @@
 :root {
-  --unifi-blue: #002d62;
-  --unifi-red: #ed1c24;
-  --unifi-gray: #f8f9fa;
-  --unifi-border: #e9ecef;
+  --brand-blue: #002d62;
+  --brand-red: #ed1c24;
+  --brand-gray: #f8f9fa;
+  --brand-border: #e9ecef;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--unifi-blue) !important;
+  background-color: var(--brand-blue) !important;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
@@ -29,11 +29,11 @@ section {
 }
 
 section.bg-light {
-  background-color: var(--unifi-gray) !important;
+  background-color: var(--brand-gray) !important;
 }
 
 .card {
-  border: 1px solid var(--unifi-border);
+  border: 1px solid var(--brand-border);
   border-radius: 12px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -48,8 +48,8 @@ section.bg-light {
 }
 
 .btn-warning {
-  background-color: var(--unifi-red);
-  border-color: var(--unifi-red);
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
   color: #fff;
   font-weight: 600;
   border-radius: 8px;
@@ -62,14 +62,14 @@ section.bg-light {
 }
 
 .btn-outline-dark {
-  border-color: var(--unifi-blue);
-  color: var(--unifi-blue);
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
   font-weight: 600;
   border-radius: 8px;
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--unifi-blue);
+  background-color: var(--brand-blue);
   color: #fff;
 }
 
