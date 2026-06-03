@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unifi - Fibre Broadband, Mobile Plans &amp; More</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top utility bar -->
+  <div class="bg-dark text-white small py-1 d-none d-md-block">
+    <div class="container d-flex justify-content-end gap-3">
+      <a href="#" class="text-white-50 text-decoration-none">Consumer</a>
+      <a href="#" class="text-white-50 text-decoration-none">Business</a>
+      <a href="#" class="text-white-50 text-decoration-none">About TM</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">unifi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Personal</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Fibre Broadband</a></li>
+              <li><a class="dropdown-item" href="#">unifi Mobile</a></li>
+              <li><a class="dropdown-item" href="#">unifi TV</a></li>
+              <li><a class="dropdown-item" href="#">Devices</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Business</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">SME Solutions</a></li>
+              <li><a class="dropdown-item" href="#">Enterprise</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Why unifi</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Coverage Map</a></li>
+              <li><a class="dropdown-item" href="#">unifi Rewards</a></li>
+              <li><a class="dropdown-item" href="#">unifi Club</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center">
+          <a href="#" class="text-white-50"><i class="bi bi-search"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm">My Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background: linear-gradient(135deg, #1a1a2e, #16213e); min-height: 480px;">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100">
+            <div class="col-lg-6 text-white">
+              <h1 class="display-4 fw-bold">Unifi Fibre</h1>
+              <p class="lead mb-4">Now with 2Gbps speeds. Unlimited data. Free router.</p>
+              <a href="#" class="btn btn-warning btn-lg px-4">View Plans</a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="bg-white bg-opacity-10 rounded-3 w-100 h-100 d-flex align-items-center justify-content-center text-white-50" style="min-height:300px;">Hero Image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background: linear-gradient(135deg, #0f3460, #533483); min-height: 480px;">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100">
+            <div class="col-lg-6 text-white">
+              <h1 class="display-4 fw-bold">unifi Mobile</h1>
+              <p class="lead mb-4">5G-ready postpaid from RM30/month. Unlimited calls.</p>
+              <a href="#" class="btn btn-warning btn-lg px-4">Learn More</a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="bg-white bg-opacity-10 rounded-3 w-100 h-100 d-flex align-items-center justify-content-center text-white-50" style="min-height:300px;">Hero Image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background: linear-gradient(135deg, #1b1b2f, #e94560); min-height: 480px;">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100">
+            <div class="col-lg-6 text-white">
+              <h1 class="display-4 fw-bold">unifi TV</h1>
+              <p class="lead mb-4">Netflix, Disney+, HBO and 60+ channels. All in one place.</p>
+              <a href="#" class="btn btn-warning btn-lg px-4">Browse Channels</a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="bg-white bg-opacity-10 rounded-3 w-100 h-100 d-flex align-items-center justify-content-center text-white-50" style="min-height:300px;">Hero Image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </section>
+
+  <!-- Quick Actions -->
+  <section class="bg-light py-4">
+    <div class="container">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-3">
+          <a href="#" class="text-decoration-none">
+            <div class="bg-white rounded-3 p-4 shadow-sm h-100">
+              <i class="bi bi-credit-card fs-2 text-dark"></i>
+              <div class="fw-bold text-dark small mt-2">PAY BILL</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="#" class="text-decoration-none">
+            <div class="bg-white rounded-3 p-4 shadow-sm h-100">
+              <i class="bi bi-phone fs-2 text-dark"></i>
+              <div class="fw-bold text-dark small mt-2">SHOP DEVICES</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="#" class="text-decoration-none">
+            <div class="bg-white rounded-3 p-4 shadow-sm h-100">
+              <i class="bi bi-arrow-left-right fs-2 text-dark"></i>
+              <div class="fw-bold text-dark small mt-2">SWITCH TO UNIFI</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="#" class="text-decoration-none">
+            <div class="bg-white rounded-3 p-4 shadow-sm h-100">
+              <i class="bi bi-tag fs-2 text-dark"></i>
+              <div class="fw-bold text-dark small mt-2">LATEST DEALS</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Deals -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Latest Deals</h2>
+        <a href="#" class="text-decoration-none">VIEW ALL &rarr;</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+              <span class="text-muted">Unifi 100Mbps</span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Unifi 100Mbps</h5>
+              <p class="text-muted small">Fibre Broadband</p>
+              <h4 class="fw-bold text-danger">RM89<span class="fs-6 fw-normal text-muted">/mth</span></h4>
+              <a href="#" class="btn btn-outline-dark btn-sm mt-2">SIGN UP</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+              <span class="text-muted">Unifi 300Mbps</span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Unifi 300Mbps</h5>
+              <p class="text-muted small">Fibre Broadband</p>
+              <h4 class="fw-bold text-danger">RM139<span class="fs-6 fw-normal text-muted">/mth</span></h4>
+              <a href="#" class="btn btn-outline-dark btn-sm mt-2">SIGN UP</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+              <span class="text-muted">Unifi 800Mbps</span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Unifi 800Mbps</h5>
+              <p class="text-muted small">Fibre Broadband</p>
+              <h4 class="fw-bold text-danger">RM249<span class="fs-6 fw-normal text-muted">/mth</span></h4>
+              <a href="#" class="btn btn-outline-dark btn-sm mt-2">SIGN UP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4">unifi Highlights</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <a href="#" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+              <div class="row g-0">
+                <div class="col-5 bg-primary bg-opacity-10 d-flex align-items-center justify-content-center" style="min-height:200px;">
+                  <span class="text-muted">Img</span>
+                </div>
+                <div class="col-7">
+                  <div class="card-body d-flex flex-column justify-content-center h-100">
+                    <h6 class="fw-bold text-dark">Upgrade to 2Gbps</h6>
+                    <p class="text-muted small mb-3">Existing customer? Get faster speeds at no extra cost for 3 months.</p>
+                    <span class="text-primary fw-bold small">FIND OUT MORE &rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+              <div class="row g-0">
+                <div class="col-5 bg-success bg-opacity-10 d-flex align-items-center justify-content-center" style="min-height:200px;">
+                  <span class="text-muted">Img</span>
+                </div>
+                <div class="col-7">
+                  <div class="card-body d-flex flex-column justify-content-center h-100">
+                    <h6 class="fw-bold text-dark">unifi Rewards</h6>
+                    <p class="text-muted small mb-3">Earn points on every bill. Redeem vouchers, gadgets, and more.</p>
+                    <span class="text-primary fw-bold small">LEARN MORE &rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+              <div class="row g-0">
+                <div class="col-5 bg-warning bg-opacity-10 d-flex align-items-center justify-content-center" style="min-height:200px;">
+                  <span class="text-muted">Img</span>
+                </div>
+                <div class="col-7">
+                  <div class="card-body d-flex flex-column justify-content-center h-100">
+                    <h6 class="fw-bold text-dark">unifi Mobile Postpaid</h6>
+                    <p class="text-muted small mb-3">5G data from RM30/month. Unlimited calls to all networks.</p>
+                    <span class="text-primary fw-bold small">VIEW PLANS &rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="text-decoration-none">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+              <div class="row g-0">
+                <div class="col-5 bg-danger bg-opacity-10 d-flex align-items-center justify-content-center" style="min-height:200px;">
+                  <span class="text-muted">Img</span>
+                </div>
+                <div class="col-7">
+                  <div class="card-body d-flex flex-column justify-content-center h-100">
+                    <h6 class="fw-bold text-dark">unifi TV + Streaming</h6>
+                    <p class="text-muted small mb-3">Netflix, Disney+, HBO Go bundled with your broadband.</p>
+                    <span class="text-primary fw-bold small">BROWSE PACKS &rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discover unifi -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-2">Discover unifi</h2>
+      <p class="text-muted mb-4">More ways to get the most out of your connection.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="bg-info bg-opacity-10 d-flex align-items-center justify-content-center" style="height:200px;">
+              <span class="text-muted">Coverage Map</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold">Check Coverage</h6>
+              <p class="text-muted small">See if unifi Fibre is available at your address.</p>
+              <a href="#" class="text-primary text-decoration-none fw-bold small">CHECK NOW &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="bg-warning bg-opacity-10 d-flex align-items-center justify-content-center" style="height:200px;">
+              <span class="text-muted">unifi Club</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold">unifi Club</h6>
+              <p class="text-muted small">Exclusive lifestyle perks, dining deals, and priority support.</p>
+              <a href="#" class="text-primary text-decoration-none fw-bold small">JOIN NOW &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="bg-success bg-opacity-10 d-flex align-items-center justify-content-center" style="height:200px;">
+              <span class="text-muted">Business Solutions</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold">Business Fibre</h6>
+              <p class="text-muted small">Dedicated internet, cloud solutions, and VoIP for your company.</p>
+              <a href="#" class="text-primary text-decoration-none fw-bold small">EXPLORE &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search prompt -->
+  <section class="py-4 bg-light">
+    <div class="container text-center">
+      <h4 class="mb-3">Looking for something else?</h4>
+      <div class="input-group mx-auto" style="max-width:400px;">
+        <input type="text" class="form-control" placeholder="Search for it">
+        <button class="btn btn-dark"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-6 mb-3">
+          <h6 class="fw-bold">Download unifi App</h6>
+          <div class="d-flex gap-2 mt-2">
+            <a href="#" class="btn btn-outline-light btn-sm">App Store</a>
+            <a href="#" class="btn btn-outline-light btn-sm">Google Play</a>
+            <a href="#" class="btn btn-outline-light btn-sm">AppGallery</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end mb-3">
+          <h6 class="fw-bold">Follow Us</h6>
+          <div class="d-flex gap-3 justify-content-md-end mt-2">
+            <a href="#" class="text-white-50 fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50 fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white-50 fs-5"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white-50 fs-5"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="row mt-4">
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold small">About TM</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Investor Relations</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Media Centre</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold small">Support</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Find a Store</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Coverage Check</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold small">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white-50 text-decoration-none">Pay Bill</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Switch to unifi</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Check Coverage</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">myunifi App</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold small">Legal</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white-50 text-decoration-none">Terms &amp; Conditions</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">PDPA Notice</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">e-Invoice</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-white-50">
+        &copy; 2026 Telekom Malaysia Berhad. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

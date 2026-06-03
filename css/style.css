@@ -1,0 +1,39 @@
+:root {
+  --unifi-primary: #e6007e;
+  --unifi-dark: #1a1a2e;
+  --unifi-accent: #ffd700;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 14px;
+  border: 1.5px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.shadow-sm {
+  border-radius: 14px;
+  border: 1.5px solid #eee;
+}
+
+footer a:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 576px) {
+  .carousel-item h1 {
+    font-size: 1.75rem;
+  }
+  .carousel-item .lead {
+    font-size: 0.9rem;
+  }
+}
