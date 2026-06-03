@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, '..')));
 const db = new Database(path.join(__dirname, 'unifi.db'));
 
 db.exec(`
-  CREATE TABLE plans (
+  CREATE TABLE IF NOT EXISTS plans (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     speed TEXT NOT NULL,
@@ -28,7 +28,7 @@ db.exec(`
     sort_order INTEGER DEFAULT 0
   );
 
-  CREATE TABLE coverage (
+  CREATE TABLE IF NOT EXISTS coverage (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     postcode TEXT NOT NULL,
     area TEXT NOT NULL,
@@ -37,7 +37,7 @@ db.exec(`
     max_speed TEXT
   );
 
-  CREATE TABLE enquiries (
+  CREATE TABLE IF NOT EXISTS enquiries (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     email TEXT NOT NULL,
