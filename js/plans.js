@@ -16,7 +16,7 @@ async function loadFibrePlans() {
               <h3 class="fw-bold mb-1" style="color:var(--brand-red);">RM${p.price}</h3>
               <p class="text-muted small mb-4">/month</p>
               <p class="text-muted small">${p.features}</p>
-              <a href="#" class="btn ${isHighlighted ? 'btn-warning' : 'btn-outline-dark'} btn-sm rounded-pill px-4 mt-3">Subscribe</a>
+              <a href="broadband.html" class="btn ${isHighlighted ? 'btn-warning' : 'btn-outline-dark'} btn-sm rounded-pill px-4 mt-3">Subscribe</a>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ async function loadMobilePlans() {
               <ul class="list-unstyled text-muted small text-start mx-auto mb-4" style="max-width:200px;">
                 ${features.map(f => `<li class="mb-2">&check; ${f}</li>`).join('')}
               </ul>
-              <a href="#" class="btn ${isPopular ? 'btn-warning' : 'btn-outline-dark'} btn-sm rounded-pill px-4">Subscribe</a>
+              <a href="broadband.html" class="btn ${isPopular ? 'btn-warning' : 'btn-outline-dark'} btn-sm rounded-pill px-4">Subscribe</a>
             </div>
           </div>
         </div>

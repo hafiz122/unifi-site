@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &mdash; PlanPilih</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PlanPilih</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="broadband.html">Broadband</a></li>
+          <li class="nav-item"><a class="nav-link" href="mobile.html">Mobile</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="tv.html">TV</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="support.html">Support</a></li>
+        </ul>
+        <div class="ms-3">
+          <a href="account.html" class="btn btn-outline-light btn-sm rounded-pill px-3">myPlanPilih</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section style="background: linear-gradient(160deg, #002d62 0%, #0055a4 100%); min-height: 250px;">
+    <div class="container d-flex align-items-center py-5">
+      <div class="col-lg-7 text-white">
+        <h1 class="display-4 fw-bold mb-3">Support Centre</h1>
+        <p class="lead fw-normal" style="opacity:0.85;">We're here to help. Find answers or get in touch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3 class="fw-bold mb-4">Frequently Asked Questions</h3>
+      <div class="accordion" id="faq">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">How do I check if PlanPilih is available at my address?</button></h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+            <div class="accordion-body">Use the coverage checker on our <a href="broadband.html">Broadband page</a>. Enter your postcode and we'll tell you instantly if fibre is available.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">What speeds can I get?</button></h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Plans range from 100Mbps to 2Gbps. <a href="compare.html">Compare plans</a> to find the best fit.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How do I pay my bill?</button></h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Log into <a href="account.html">myPlanPilih</a> to view and pay your bill. We accept credit cards, FPX online banking, and JomPAY.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">How long does installation take?</button></h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">Standard installation takes 3-5 working days. A technician will contact you to schedule an appointment.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Can I cancel anytime?</button></h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">All plans are contract-free. Cancel anytime with 30 days notice. No early termination fees.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container">
+      <h3 class="fw-bold mb-4">Send Us a Message</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form id="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control rounded-pill" placeholder="Full name" style="border-color:var(--brand-border);" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" class="form-control rounded-pill" placeholder="Email address" style="border-color:var(--brand-border);" required>
+              </div>
+              <div class="col-12">
+                <select name="topic" class="form-select rounded-pill" style="border-color:var(--brand-border);">
+                  <option value="">What is this about?</option>
+                  <option value="broadband">Broadband enquiry</option>
+                  <option value="mobile">Mobile enquiry</option>
+                  <option value="billing">Billing question</option>
+                  <option value="coverage">Coverage question</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea name="message" class="form-control" rows="4" placeholder="Your message" style="border-color:var(--brand-border); border-radius:16px;" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn rounded-pill px-5" style="background:var(--brand-red); color:#fff; font-weight:600;">Send Message</button>
+              </div>
+            </div>
+            <div id="contact-status" class="text-center mt-3 small"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white">
+    <div class="container">
+      <div class="row mb-4 pt-5">
+        <div class="col-md-7 mb-4">
+          <h5 class="fw-bold mb-1">PlanPilih</h5>
+          <p class="text-white-50 small">Made for demo purposes.</p>
+        </div>
+        <div class="col-md-5 text-md-end mb-4">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a href="#" class="text-white-50 small text-decoration-none">FB</a>
+            <a href="#" class="text-white-50 small text-decoration-none">IG</a>
+            <a href="#" class="text-white-50 small text-decoration-none">YT</a>
+            <a href="#" class="text-white-50 small text-decoration-none">X</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-white-50 pb-4">&copy; 2026 PlanPilih. Demo project.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/contact.js"></script>
+  <script>initContactForm();</script>
+</body>
+</html>

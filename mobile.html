@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile 5G Plans &mdash; PlanPilih</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PlanPilih</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="broadband.html">Broadband</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="mobile.html">Mobile</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="tv.html">TV</a></li>
+          <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+        </ul>
+        <div class="ms-3">
+          <a href="account.html" class="btn btn-outline-light btn-sm rounded-pill px-3">myPlanPilih</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section style="background: linear-gradient(160deg, #002d62 0%, #001a3d 100%); min-height: 300px;">
+    <div class="container d-flex align-items-center py-5">
+      <div class="col-lg-7 text-white">
+        <h1 class="display-4 fw-bold mb-3">PlanPilih Mobile 5G</h1>
+        <p class="lead fw-normal" style="opacity:0.85;">5G-ready postpaid. No contracts. Cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row g-4 justify-content-center" id="mobile-plans"></div>
+    </div>
+  </section>
+
+  <footer class="text-white">
+    <div class="container">
+      <div class="row mb-4 pt-5">
+        <div class="col-md-7 mb-4">
+          <h5 class="fw-bold mb-1">PlanPilih</h5>
+          <p class="text-white-50 small">Made for demo purposes.</p>
+        </div>
+        <div class="col-md-5 text-md-end mb-4">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a href="#" class="text-white-50 small text-decoration-none">FB</a>
+            <a href="#" class="text-white-50 small text-decoration-none">IG</a>
+            <a href="#" class="text-white-50 small text-decoration-none">YT</a>
+            <a href="#" class="text-white-50 small text-decoration-none">X</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-white-50 pb-4">&copy; 2026 PlanPilih. Demo project.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/plans.js"></script>
+  <script>loadMobilePlans();</script>
+</body>
+</html>

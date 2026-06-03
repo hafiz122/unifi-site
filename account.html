@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myPlanPilih &mdash; Account</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PlanPilih</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="broadband.html">Broadband</a></li>
+          <li class="nav-item"><a class="nav-link" href="mobile.html">Mobile</a></li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="tv.html">TV</a></li>
+          <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+        </ul>
+        <div class="ms-3">
+          <a href="account.html" class="btn btn-outline-light btn-sm rounded-pill px-3 fw-bold">myPlanPilih</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body p-5">
+              <h3 class="fw-bold text-center mb-4">Sign In</h3>
+              <form onsubmit="event.preventDefault(); alert('Demo: Sign in not available.');">
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold">Email</label>
+                  <input type="email" class="form-control rounded-pill" placeholder="you@example.com" style="border-color:var(--brand-border);">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold">Password</label>
+                  <input type="password" class="form-control rounded-pill" placeholder="Enter password" style="border-color:var(--brand-border);">
+                </div>
+                <button type="submit" class="btn rounded-pill w-100 py-2 mb-3" style="background:var(--brand-red); color:#fff; font-weight:600;">Sign In</button>
+              </form>
+              <p class="text-center text-muted small mb-0">
+                Don't have an account? <a href="#" onclick="event.preventDefault(); alert('Demo: Sign up not available.');" style="color:var(--brand-red);">Sign Up</a>
+              </p>
+            </div>
+          </div>
+          <p class="text-center text-muted small mt-3">Demo page. Authentication not enabled.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white">
+    <div class="container">
+      <div class="row mb-4 pt-5">
+        <div class="col-md-7 mb-4">
+          <h5 class="fw-bold mb-1">PlanPilih</h5>
+          <p class="text-white-50 small">Made for demo purposes.</p>
+        </div>
+        <div class="col-md-5 text-md-end mb-4">
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a href="#" class="text-white-50 small text-decoration-none">FB</a>
+            <a href="#" class="text-white-50 small text-decoration-none">IG</a>
+            <a href="#" class="text-white-50 small text-decoration-none">YT</a>
+            <a href="#" class="text-white-50 small text-decoration-none">X</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-white-50 pb-4">&copy; 2026 PlanPilih. Demo project.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
